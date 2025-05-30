@@ -7,8 +7,8 @@ const app = express();
 const PORT = 3005;
 
 // Rutas
-//Echa por mi borrar primera
-app.get('/superheroes/nombreReal/:nombreReal', obtenerSuperheroePornombreRealController);
+//Ruta buscar por nombre real hecha por mi para probar
+app.get('/superheroes/nombreReal/:nombreReal', obtenerSuperheroePornombreRealController); 
 app.get('/superheroes/id/:id', obtenerSuperheroePorIdController);
 app.get('/superheroes/atributo/:atributo/:valor', buscarSuperheroesPorAtributoController);
 app.get('/superheroes/edad/mayorA30', obtenerSuperheroesMayoresDe30Controller);

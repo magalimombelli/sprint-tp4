@@ -1,6 +1,6 @@
 // controllers/superheroesController.mjs
 import { obtenerSuperheroePorId, buscarSuperheroesPorAtributo, obtenerSuperheroesMayoresDe30, obtenerSuperheroePornombreReal } from '../services/superheroesService.mjs';
-import { renderizarSuperheroe, renderizarListaSuperheroes } from '../views/responseView.mjs';
+import { renderizarSuperheroe, renderizarListaSuperheroes } from '../views/responsiveView.mjs';
 
 export function obtenerSuperheroePorIdController(req, res) {
   const { id } = req.params;
@@ -21,7 +21,7 @@ export function obtenerSuperheroePornombreRealController(req, res) {
   if (superheroe) {
     res.send(renderizarListaSuperheroes(superheroe));
   } else {
-    res.status(404).send({ mensaje: "Superheroe no encontrado por ktta"});
+    res.status(404).send({ mensaje: "Superheroe no encontrado por Anto"});
   }
 }
 // ... (resto del código)
